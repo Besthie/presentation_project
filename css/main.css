@@ -31,6 +31,7 @@ html {
     'story story'
     'solution solution'
     'team tetatet'
+    'benefits benefits'
     'contact contact'
     'about about'
     'footer footer';
@@ -243,21 +244,16 @@ solution {
   color: #FF7800;
 }
 
-benefits {
-  grid-area: benefits;
-  width: 100vw;
-  height: 100vh;
-}
 
-.benefits__tetatet {
+.program__tetatet {
   padding-right: 100px;
 }
 
-.benefits__team {
+.program__team {
   padding-left: 100px;
 }
 
-.benefits__block h3 {
+.program__block h3 {
   /*display: flex;
   align-items: center;
   justify-content: center; */
@@ -270,7 +266,7 @@ benefits {
   /*line-height: 1.25;*/
 }
 
-.benefits__block p {
+.program__block p {
   font-size: 20px;
   color: #03338c;
   margin-top: 0;
@@ -280,7 +276,7 @@ benefits {
   margin-bottom: 15px;
 }
 
-.benefits__block ul li {
+.program__block ul li {
   display: block;
   position: relative;
   color: #03338c;
@@ -289,11 +285,11 @@ benefits {
   margin-left: 5px;
 }
 
-.benefits__block ul {
+.program__block ul {
   margin-top: -10px;
 }
 
-.benefits__block ul li:before {
+.program__block ul li:before {
   content: "";
   position: absolute;
   top: 1.2em;
@@ -314,6 +310,111 @@ contact {
   margin: auto;
 }
 
+benefits {
+  grid-area: benefits;
+  width: 80vw;
+  height: 80vh;
+  justify-self: center;
+}
+
+.benefits {
+  display: flex;
+  /*position: center;*/
+  justify-content: center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.benefits__block ul li {
+  display: block;
+  position: relative;
+  color: #03338c;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+.benefits__block ul {
+  margin-top: -10px;
+}
+
+.benefits__block h2 {
+  /*display: flex;
+  align-items: center;
+  justify-content: center; */
+  text-align: center;
+  font-weight: lighter;
+  color: #03338c;
+  font-size: 38px;
+  padding-top: 40px;
+  margin-bottom: 50px;
+  /*line-height: 1.25;*/
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.benefits__block ul li:before {
+  content: "";
+  position: absolute;
+  top: 1.2em;
+  left: -20px;
+  margin-top: -.8em;
+  background: #FF7800;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+/* iphone 11 */
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  .welcome__header h1 {
+    font-size: 46px;
+  }
+
+  .welcome__header p {
+    font-size: 16px;
+  }
+  .story__header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .solution__block {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .program__team {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .program__tetatet {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  benefits {
+    height: 100vh;
+  }
+  .benefits {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .benefits__block h2 {
+    font-size: 28px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  contact {
+    margin-top: 70px;
+  }
+}
+
 about {
   grid-area: about;
   width: 100vw;
@@ -323,7 +424,6 @@ about {
 footer {
   grid-area: footer;
 }
-
 
 /*
 * Remove text-shadow in selection highlight:
