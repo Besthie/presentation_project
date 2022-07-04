@@ -44,7 +44,7 @@ html {
   grid-column-end: 3;
   background-color: #e0ebff;
 }
-ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 17px;
@@ -244,6 +244,13 @@ solution {
   color: #FF7800;
 }
 
+.team__card {
+  grid-area: team;
+}
+
+.tetatet__card {
+  grid-area: tetatet;
+}
 
 .program__tetatet {
   padding-right: 100px;
@@ -367,7 +374,28 @@ benefits {
 }
 
 /* iphone 11 */
-@media only screen and (min-width: 414px) and (max-width: 767px) {
+/*@media only screen and (min-width: 414px) and (max-width: 767px) {*/
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+
+  .container {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: 80px;
+    /*grid-auto-rows: 400px;*/
+    grid-template-areas:
+    'header'
+    'welcome'
+    'story'
+    'solution'
+    'team'
+    'tetatet'
+    'benefits'
+    'contact'
+    'about'
+    'footer';
+  }
+
   .welcome__header h1 {
     font-size: 46px;
   }
@@ -384,6 +412,82 @@ benefits {
     margin-right: 20px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  solution {
+    grid-area: solution;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .team__card{
+    grid-area: team;
+    border-color: white;
+    border-style: solid;
+    border-width: .05em;
+    background-color: white;
+    margin-bottom: .25em;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .tetatet__card {
+    grid-area: tetatet;
+    /*border: #FF7800;*/
+    border-color: white;
+    border-style: solid;
+    border-width: .05em;
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: .25em;
+  }
+
+  .tetatet__card h3 {
+    padding-top: 0;
+    text-align: left;
+    font-size: 21px;
+    margin-top: 5px;
+  }
+
+  .team__card h3 {
+    padding-top: 0;
+    text-align: left;
+    font-size: 21px;
+    margin-top: 5px;
+  }
+
+  .program__block ul li {
+    color: #03338c;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 0;
+    padding-right: 70px;
+    /*padding-left: -50px;*/
+    margin-bottom: 5px;
+  }
+
+  .program__block ul {
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+    padding-left: 20px;
+  }
+
+  .program__block ul li:before {
+    content: "";
+    position: absolute;
+    top: 1.3em;
+    left: -20px;
+    margin-top: -.8em;
+    background: #FF7800;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+  }
+
+  .program__block p {
+    font-size: 14px;
   }
 
   .program__team {
