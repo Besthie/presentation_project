@@ -140,12 +140,12 @@ welcome {
 }
 
 story {
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*justify-content: center;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: story;
-  /*text-align: center;*/
-  /*align-items: center;*/
+  text-align: center;
+  align-items: center;
   display: grid;
   width: 100vw;
   height: 100vh;
@@ -154,8 +154,14 @@ story {
 /*figure out how to make it response for mobile*/
 /*otherwise it's too much padding*/
 .story__header {
-  padding-left: 200px;
-  padding-right: 200px;
+  /*padding-left: 200px;*/
+  /*padding-right: 200px;*/
+  grid-area: story;
+  /*text-align: center;*/
+  /*align-items: center;*/
+  display: grid;
+  width: 100vw;
+  height: 100vh;
 }
 
 .story__header h3 {
@@ -317,10 +323,10 @@ contact {
   margin: auto;
 }
 
-benefits {
+.benefits__block {
   grid-area: benefits;
   width: 80vw;
-  height: 80vh;
+  height: 100vh;
   justify-self: center;
 }
 
@@ -404,9 +410,27 @@ benefits {
     font-size: 16px;
   }
   .story__header {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
   }
+  .story__header h3 {
+    font-size: 21px;
+    text-align: left;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  .story__copy {
+    max-width: 93%;
+  }
+
+  .story__header p {
+    font-size: 14px;
+    text-align: left;
+    padding: 0 10px;
+  }
+
   .solution__block {
     margin-left: 20px;
     margin-right: 20px;
@@ -500,8 +524,9 @@ benefits {
     padding-left: 10px;
   }
 
-  benefits {
+  .benefits__block {
     height: 100vh;
+    width: 100vw;
   }
   .benefits {
     margin-left: 20px;
@@ -509,13 +534,27 @@ benefits {
   }
 
   .benefits__block h2 {
-    font-size: 28px;
-    margin-left: 10px;
+    font-size: 21px;
+    margin-left: 25px;
     margin-right: 10px;
+    text-align: left;
   }
 
-  contact {
+  .benefits__block ul li {
+    font-size: 14px;
+  }
+
+  .contact {
+    grid-area: contact;
     margin-top: 70px;
+    height: 100vh;
+    position:-webkit-sticky;
+    position: sticky;
+    bottom: -450px;
+  }
+
+  #contact_button {
+    visibility: hidden;
   }
 }
 
