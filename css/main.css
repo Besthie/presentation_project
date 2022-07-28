@@ -379,9 +379,190 @@ contact {
   border-radius: 50%;
 }
 
+/* iPhone SE(2016)*/
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px) {
+  .container {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: 80px;
+    /*grid-auto-rows: 400px;*/
+    grid-template-areas:
+    'header'
+    'welcome'
+    'story'
+    'solution'
+    'team'
+    'tetatet'
+    'benefits'
+    'contact'
+    'about'
+    'footer';
+  }
+
+  .welcome__header h1 {
+    font-size: 46px;
+  }
+
+  .welcome__header p {
+    font-size: 16px;
+  }
+  .story__header {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
+    height: 70vh;
+  }
+  .story__header h3 {
+    font-size: 21px;
+    text-align: left;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  .story__copy {
+    max-width: 93%;
+  }
+
+  .story__header p {
+    font-size: 14px;
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .solution__block {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  solution {
+    grid-area: solution;
+    width: 100vw;
+    height: 110vh;
+  }
+
+  .team__card{
+    grid-area: team;
+    border-color: white;
+    border-style: solid;
+    border-width: .05em;
+    background-color: white;
+    margin-bottom: .25em;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .tetatet__card {
+    grid-area: tetatet;
+    /*border: #FF7800;*/
+    border-color: white;
+    border-style: solid;
+    border-width: .05em;
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: .25em;
+  }
+
+  .tetatet__card h3 {
+    padding-top: 0;
+    text-align: left;
+    font-size: 21px;
+    margin-top: 5px;
+  }
+
+  .team__card h3 {
+    padding-top: 0;
+    text-align: left;
+    font-size: 21px;
+    margin-top: 5px;
+  }
+
+  .program__block ul li {
+    color: #03338c;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 0;
+    padding-right: 70px;
+    /*padding-left: -50px;*/
+    margin-bottom: 5px;
+  }
+
+  .program__block ul {
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+    padding-left: 20px;
+  }
+
+  .program__block ul li:before {
+    content: "";
+    position: absolute;
+    top: 1.3em;
+    left: -20px;
+    margin-top: -.8em;
+    background: #FF7800;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+  }
+
+  .program__block p {
+    font-size: 14px;
+  }
+
+  .program__team {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .program__tetatet {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .benefits__block {
+    height: 110vh;
+    width: 100vw;
+  }
+  .benefits {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .benefits__block h2 {
+    font-size: 21px;
+    margin-left: 25px;
+    margin-right: 10px;
+    text-align: left;
+  }
+
+  .benefits__block ul li {
+    font-size: 14px;
+  }
+
+  .contact {
+    grid-area: contact;
+    height: 100px;
+    position:-webkit-sticky;
+    position: sticky;
+    bottom: 25px;
+  }
+
+  #contact_button {
+    visibility: hidden;
+  }
+
+}
 /* iphone 11 */
 /*@media only screen and (min-width: 414px) and (max-width: 767px) {*/
-@media only screen and (min-width: 200px) and (max-width: 767px) {
+
+/* iphone 8+ */
+@media only screen and (min-device-width: 414px) and (max-device-width: 737px) {
 
   .container {
     display: grid;
@@ -525,7 +706,7 @@ contact {
   }
 
   .benefits__block {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
   }
   .benefits {
@@ -546,11 +727,10 @@ contact {
 
   .contact {
     grid-area: contact;
-    margin-top: 70px;
-    height: 100vh;
+    height: 100px;
     position:-webkit-sticky;
     position: sticky;
-    bottom: -450px;
+    bottom: 25px;
   }
 
   #contact_button {
