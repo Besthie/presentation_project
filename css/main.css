@@ -731,7 +731,7 @@ contact {
     height: 100px;
     position:-webkit-sticky;
     position: sticky;
-    bottom: 25px;
+    bottom: 10px;
   }
 
   #contact_button {
