@@ -596,10 +596,11 @@ contact {
     max-width: 100%;
   }
   .story__header h3 {
-    font-size: 21px;
+    font-size: 40px;
     text-align: left;
     padding: 0 10px;
     margin-bottom: 10px;
+    line-height: 1.15;
   }
 
   .story__copy {
@@ -607,7 +608,7 @@ contact {
   }
 
   .story__header p {
-    font-size: 14px;
+    font-size: 21px;
     text-align: left;
     padding: 0 10px;
   }
