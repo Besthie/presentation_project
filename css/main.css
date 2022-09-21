@@ -380,12 +380,12 @@ contact {
 }
 
 .about {
-    grid-area: about;
+  grid-area: about;
 }
 .about__block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about__block p {
@@ -688,10 +688,11 @@ contact {
     font-size: 16px;
   }
   .story__header {
+    margin-top: 30px;
     padding-left: 10px;
     padding-right: 10px;
     max-width: 100%;
-    height: 70vh;
+    height: fit-content;
   }
   .story__header h3 {
     font-size: 21px;
@@ -701,11 +702,14 @@ contact {
   }
 
   .story__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 93%;
   }
 
   .story__header p {
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     padding: 0 10px;
   }
