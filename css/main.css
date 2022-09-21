@@ -412,7 +412,7 @@ contact {
 }
 
 .footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 .footer__block {
   display: flex;
@@ -431,8 +431,8 @@ contact {
 }
 
 .footer__block img {
-    width: 350px;
-    height: auto;
+  width: 350px;
+  height: auto;
 }
 
 @media (min-width:1281px) { /* hi-res laptops and desktops */
@@ -444,12 +444,12 @@ contact {
     bottom: 25px;
   }
   .about__block p {
-      margin-left: 200px;
-      margin-right: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
   .about__block img {
-      width: 5000px;
-      height: auto;
+    width: 500px;
+    height: auto;
   }
 }
 
