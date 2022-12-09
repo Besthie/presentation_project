@@ -659,7 +659,7 @@ contact {
 
 /* iPhone SE(2016)*/
 @media only screen
-  and (min-width: 320px)
+  and (min-width: 270px)
   and (max-width: 568px) {
   .container {
     display: grid;
@@ -678,6 +678,7 @@ contact {
     'contact'
     'about'
     'footer';
+    /*background-color: red; */
   }
 
   .welcome__header h1 {
